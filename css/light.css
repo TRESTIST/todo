@@ -1,0 +1,297 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+.header {
+  background-color: #181818;
+
+}
+
+.container {
+  width: 1120px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header__inner {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__inner-text {
+  color: #fff;
+  font-size: 30px;
+}
+
+.white__black {
+  background-color: #fff;
+}
+.theme__btn-adjust,
+.theme__btn-cog {
+  color: #fff;
+  background: none;
+  font-size: 25px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.fa-cog {
+  color: #9797a8;
+}
+
+/* .header__inner-theme {
+} */
+
+/* .theme {
+  text-align: right;
+  padding: 10px 30px;
+  border-radius: 50px;
+  appearance: none;
+  font-family: inherit;
+} */
+
+/* .theme__answer {
+  margin-right: 10px;
+} */
+
+/* .header__inner-theme::after {
+  color: rgb(0, 0, 0);
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  margin-top: -3px;
+  pointer-events: none;
+  z-index: 1;
+  content: "";
+  border-style: solid;
+  border-width: 6px 5px 0 5px;
+  border-color: #000 transparent transparent transparent;
+} */
+
+.todo {
+  margin-top: 100px;
+  transition: all 0.5s;
+}
+
+.todo__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo__inner-text {
+  color: #000;
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.todo__inner-title {
+  color: #585858;
+  font-size: 20px;
+}
+
+
+.ask__input {
+  background-color: #181818;
+  color: #fff;
+  display: block;
+  border-radius: 15px;
+  width: 370px !important;
+  height: 60px;
+  margin: 20px 0;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.area__input {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  height: 100px;
+}
+
+.ask-btn {
+  background-color: #f24c4c;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.right__text {
+  margin-bottom: 30px;
+}
+
+.task__header{
+  width: 400px;
+}
+
+.tasks {
+  background-color: #181818;
+  width: 400px;
+  height: 200px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+.task__header {
+  font-size: 25px;
+  color: #fff;
+  margin-bottom: 20px;
+  word-break:break-all;
+
+}
+.task__content {
+  width: max-content;
+  height: 200px;
+  word-break:break-all;
+  /* overflow-y: scroll; */
+}
+
+.tasks-btn{
+  font-size: 0;
+}
+
+
+.task__header-text {
+  color: #000;
+  font-weight: 500;
+}
+
+.tasks__title {
+  list-style: none;
+  margin-left: 20px;
+  padding: 20px;
+  color: #fff;
+}
+
+.btn__complite {
+  color: #0bd4a2;
+  padding: 1rem;
+  font-size: 1rem;
+  display: block;
+
+}
+
+.btn__trash {
+  color: #ff4f47;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.fa-cheak,
+.fa-trash {
+  cursor: pointer;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.btn__complite,
+.btn__trash {
+  background: #181818;
+  border-radius: 15px;
+  cursor: pointer;
+  border: none;
+}
+
+.animation {
+  transition: all 0.5s;
+}
+
+.shorted {
+  overflow-y: scroll !important;
+  overflow-x: hidden !important;
+}
+
+.completed{
+  text-decoration: line-through !important;
+}
+
+@media (max-width: 1130px) {
+ 
+  .container{
+    width: auto;
+  }
+
+ .todo{
+   display: flex;
+ }
+
+ .todo__inner{
+   display: block;
+ }
+ .todo__inner-left{
+  margin-bottom: 100px;
+}
+ .tasks{
+  width: 370px;
+}
+}
+
+@media (max-width: 440px) {
+  .todo__inner{
+    width: 300px;
+    margin: 0 auto; 
+  }
+  
+
+  .todo__inner-text{
+    font-size: 34px;
+  }
+  .ask__input{
+    font-size: 16px;
+    width: 300px !important;
+  }
+
+  .area__input {
+    font-size: 16px;
+
+  }
+
+  .tasks{
+    width: 300px;
+  }
+}
+
+@media (max-width: 340px) {
+
+  .todo__inner{
+    width: auto;
+  }
+
+  .todo__inner-text{
+    font-size: 30px;
+  }
+  .ask__input{
+    width: 280px !important;
+  }
+  
+  .task__header{
+    width: 280px;
+  }
+
+  .task__header-text{
+    font-size: 22px;
+  }
+
+  .tasks{
+    width: 280px;
+  }
+}

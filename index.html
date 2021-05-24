@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Todo</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link  rel="stylesheet" href="css/style.css"  id="theme"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+            <div class="header__inner-text">
+            <h3 class="">Todo</h3>
+          </div>
+          <div class="header__inner-theme">
+            <button class="theme__btn-adjust">
+              <i class="fas fa-adjust"></i>
+            </button>
+            <button class="theme__btn-cog">
+              <i class="fas fa-cog"></i>
+            </button>
+            <!-- <select  class="theme">
+              <option value="dark" class="theme__answer button-dark">
+                Dark
+              </option>
+              <option value="purpule" class="theme__answer button-light">
+                Purpule
+              </option>
+              <option value="custom" class="theme__answer button-custom">
+                Custom
+              </option> -->
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="todo">
+      <div class="container">
+        <div class="todo__inner">
+          <div class="todo__inner-left">
+            <h2 class="todo__inner-text">Добавить задачу</h2>
+            <!-- <p class="todo__inner-title">Заполните поля</p> -->
+          <div class="todo__inner-ask">
+            <input class="ask__input"  type="text" placeholder="Заголовок">
+            <textarea class="ask__input area__input"  type="text" placeholder="Введите текст" ></textarea>
+            <button  class="ask__input ask-btn"> Добавить</button>
+          </div> 
+          </div>
+          <div class="todo__inner-right">
+            <h2 class="todo__inner-text right__text ">Ваши задачи</h2>
+            <div class="task"> 
+              <!-- <div class="task__header">
+                <h3 class="task__header-text" >ДЗ</h3>
+              </div>
+            <div class="tasks">
+              <div class="task__content">
+                <p class="tasks__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="tasks-btn">
+                <button class="btn__complite">
+                  <i class="fas fa-check"></i>
+                </button>
+              <button class="btn__trash">
+                <i class="fas fa-trash"></i>
+              </button>
+              </div>
+            </div> -->
+          </div>
+            
+
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>
